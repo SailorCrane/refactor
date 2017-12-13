@@ -44,12 +44,25 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " These are the default key mappings
-map <A-r>e :call ExtractMethod()<ENTER>
-map <A-r>p :call LocalVariableToParameter()<ENTER>
-map <A-r>r :call RenameVariable()<ENTER>
-map <A-r>d :call RemoveParameter()<ENTER>
-map <A-r>o :call ReorderParameters()<ENTER>
-map <A-r>c :call IntroduceConstant()<ENTER>
+" map <A-r>e :call ExtractMethod()<ENTER>
+" map <A-r>p :call LocalVariableToParameter()<ENTER>
+" map <A-r>r :call RenameVariable()<ENTER>
+" map <A-r>d :call RemoveParameter()<ENTER>
+" map <A-r>o :call ReorderParameters()<ENTER>
+" map <A-r>c :call IntroduceConstant()<ENTER>
+xnoremap <A-r>e :call ExtractMethod()<ENTER>
+xnoremap <A-r>p :call LocalVariableToParameter()<ENTER>
+xnoremap <A-r>r :call RenameVariable()<ENTER>
+xnoremap <A-r>d :call RemoveParameter()<ENTER>
+xnoremap <A-r>o :call ReorderParameters()<ENTER>
+xnoremap <A-r>c :call IntroduceConstant()<ENTER>
+
+nnoremap <A-r>e :call ExtractMethod()<ENTER>
+nnoremap <A-r>p :call LocalVariableToParameter()<ENTER>
+nnoremap <A-r>r :call RenameVariable()<ENTER>
+nnoremap <A-r>d :call RemoveParameter()<ENTER>
+nnoremap <A-r>o :call ReorderParameters()<ENTER>
+nnoremap <A-r>c :call IntroduceConstant()<ENTER>
 
 " Used to prevent the keywords be parsed as variable name
 let s:Keywords = ["auto", "const", "double", "float", "int", "short", "struct", "unsigned", "break", "continue", "else", "for", "long", "signed", "switch", "void", "case", "default", "enum", "goto", "register", "sizeof", "typedef", "volatile", "char", "do", "extern", "if", "return", "static", "union", "while", "asm", "dynamic_cast", "namespace", "reinterpret_cast", "try", "bool", "explicit", "new", "static_cast", "typeid", "catch", "false", "operator", "template", "typename", "class", "friend", "private", "this", "using", "const_cast", "inline", "public", "throw", "virtual", "delete", "mutable", "protected", "true", "wchar_t", "size_t"]
